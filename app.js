@@ -23,10 +23,16 @@ app.get('/todo/', function (req, res) {
 
   res.render('todo.mustache', { name: 'A List Title',
                                 todoList: 'Learn Node Basics',
-                                Apple1: 'Learn Node Basics'
-
-
-
+                                text1: 'Learn Node Basics',
+                                text2: 'Learn Express Basics',
+                                text3: 'Learn Mustache',
+                                text4: 'Learn HTML forms with Expresss',
+                                text5: 'Learn about authentication',
+                                text6: 'Learn how to connect to PostgreSQL',
+                                text7: 'Learn how to create databases',
+                                text8: 'Learn SQL',
+                                text9: 'Learn how to connect to PostgreSQL from Node',
+                                text10: 'Learn how to use Sequelize'
  });
 });
 

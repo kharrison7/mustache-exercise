@@ -36,7 +36,25 @@
         <div class="col-xs-12">
           <h1>Todo</h1>
           <ul class="todo-list">
-          <li>{{Apple1}}</li>
+
+      {{#todoList}} {{#complete}} <input type="checkbox"><li>{{Apple1}}</li>   {{/complete}} <li>{{Apple1}}</li>
+        {{^complete}}
+          <input type="checkbox">
+          {{Apple2}}
+        {{/complete}}
+  {{/todoList}}
+
+        <li>{{text1}}</li>
+        <li>{{text2}}</li>
+        <li>{{text3}}</li>
+        <li>{{text4}}</li>
+        <li>{{text5}}</li>
+        <li>{{text6}}</li>
+        <li>{{text7}}</li>
+        <li>{{text8}}</li>
+        <li>{{text9}}</li>
+        <li>{{text10}}</li>
+
 
 
           {{#todoList}}

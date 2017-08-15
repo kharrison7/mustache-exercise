@@ -21,7 +21,13 @@ app.get('/todo/', function (req, res) {
 
 
 
-  res.render('todo.mustache', { name: 'Lila' });
+  res.render('todo.mustache', { name: 'A List Title',
+                                todoList: 'Learn Node Basics',
+                                Apple1: 'Learn Node Basics'
+
+
+
+ });
 });
 
 app.listen(3000, function () {

@@ -31,6 +31,29 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
+          <h1>Todo</h1>
+          <ul class="todo-list">
+          {{#todoList}}
+            <li>
+              {{#complete}}
+                <input type="checkbox" checked>
+                <del>{{Apple1}}</del>
+              {{/complete}}
+              {{^complete}}
+                <input type="checkbox">
+                {{Apple2}}
+              {{/complete}}
+          {{/todoList}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+<!-- This is from the zip file. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
           <!-- TODO write your HTML/Mustache here -->
         </div>
       </div>

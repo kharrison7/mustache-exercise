@@ -16,13 +16,13 @@ app.get('/todo/', function (req, res) {
   // TODO write your code here
   // res.send('Something.');
   // res.sendFile(path.join(__dirname + '/views/todo.html'));
+  // res.render('index', { name: 'Lila' } );
+  //
 
-  res.render('todo.mustache', {
-    "Apple1": "Ex1",
-    "Apple2": "Ex2",
-    "#todoList": "abc"
-  })
-})
+
+
+  res.render('todo.mustache', { name: 'Lila' });
+});
 
 app.listen(3000, function () {
   console.log('Successfully started express application!');

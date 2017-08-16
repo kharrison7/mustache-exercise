@@ -38,7 +38,11 @@
                   <input type="checkbox" name="additions[]" id="text3" value="text2">
                   <label for="text2">{{text3}}</label>
                   <br>
-                  <input type="checkbox" name="additions[]" onclick='strike' id="text4" value="text2">
+
+<!-- document.getElementById('text4').innerHTML = '<s>text</s>' -->
+
+
+                  <input type="checkbox" name="additions[]" onclick="console.log('Click4');" id="text4" value="text2">
                   <label for="text2">{{text4}}</label>
                   <br>
                   <input type="checkbox" name="additions[]" id="text5" value="text2">
@@ -62,8 +66,16 @@
 
 
 
+                  {{#complete}}
+                    <input type="checkbox" checked>
+                    {{#strike}}{{text1}}{{/strike}}
+                  {{/complete}}
+                  {{^complete}}
+                    <input type="checkbox">
+                    {{text1}}
+                  {{/complete}}
 
-	<p><s>This text has a strikethrough</s></p>
+	<!-- <p><s>This text has a strikethrough</s></p> -->
         </div>
       </div>
     </div>

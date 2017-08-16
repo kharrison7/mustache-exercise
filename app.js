@@ -26,6 +26,8 @@ app.get('/todo/', function (req, res) {
 
 
   res.render('todo.mustache', { name: 'A Todo List:',
+                                complete: 'true',
+                                text1: {text1: 'Learn Node Basics', complete: 'true'},
                                 text1: 'Learn Node Basics',
                                 text2: 'Learn Express Basics',
                                 text3: 'Learn Mustache',
@@ -36,18 +38,14 @@ app.get('/todo/', function (req, res) {
                                 text8: 'Learn SQL',
                                 text9: 'Learn how to connect to PostgreSQL from Node',
                                 text10: 'Learn how to use Sequelize',
-
-
+                                // complete: 'false',
 
                                   "strike": function () {
                                     return function (text, render) {
                                       return "<s>" + render(text) + "</s>";
                                     };
                                   }
-
-
  });
-
 });
 
 let additions = [];
@@ -55,11 +53,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 console.log("Additions Array: " + additions);
 app.use(bodyParser.json());
 
-app.use(function (req, res) {
-  res.setHeader('Content-Type', 'text/plain')
-  res.write('you posted:\n')
-  res.end(JSON.stringify(req.body, null, 2))
-};
+// app.use(function (req, res) {
+//   res.setHeader('Content-Type', 'text/plain')
+//   res.write('you posted:\n')
+//   res.end(JSON.stringify(req.body, null, 2))
+// };
 
 
 

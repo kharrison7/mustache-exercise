@@ -32,7 +32,18 @@ app.get('/todo/', function (req, res) {
                                 text7: 'Learn how to create databases',
                                 text8: 'Learn SQL',
                                 text9: 'Learn how to connect to PostgreSQL from Node',
-                                text10: 'Learn how to use Sequelize'
+                                text10: 'Learn how to use Sequelize',
+
+
+
+                                  "strike": function () {
+                                    return function (text, render) {
+                                      return "<s>" + render(text) + "</s>";
+                                    }
+                                  }
+
+
+
  });
 });
 

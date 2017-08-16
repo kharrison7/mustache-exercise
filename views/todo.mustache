@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col-xs-12">
           <!-- TODO write your HTML/Mustache here -->
-                  <input type="checkbox" name="additions" id="text22" value="text2">
+                  {{#strike}}<input type="checkbox" name="additions" id="text22" value="text2">
                   <label for="text2">{{text1}}</label>
                   <br>
                   <input type="checkbox" name="additions" id="text22" value="text2">
@@ -59,7 +59,11 @@
                   <input type="checkbox" name="additions" id="text22" value="text2">
                   <label for="text2">{{text10}}</label>
                   <br>
+                  {{/strike}}
 
+
+
+	<p><s>This text has a strikethrough</s></p>
         </div>
       </div>
     </div>

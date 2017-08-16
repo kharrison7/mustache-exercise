@@ -21,7 +21,7 @@ app.get('/todo/', function (req, res) {
 
 
 
-  res.render('todo.mustache', { name: 'A List Title',
+  res.render('todo.mustache', { name: 'A Todo List:',
                                 todoList: 'Learn Node Basics',
                                 text1: 'Learn Node Basics',
                                 text2: 'Learn Express Basics',
